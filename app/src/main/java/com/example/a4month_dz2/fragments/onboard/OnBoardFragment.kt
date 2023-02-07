@@ -30,17 +30,11 @@ class OnBoardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initialize()
         setupListener()
-        dots()
-        openHome()
-    }
-
-    private fun openHome() {
-        PreferenceHelper.save = true
     }
 
     private fun initialize() {
         binding.viewPager.adapter = OnBoardViewPagerAdapter(this@OnBoardFragment)
-        PreferenceHelper.unit(requireContext())
+        dots()
     }
 
     private fun setupListener() = with(binding.viewPager) {
@@ -53,7 +47,8 @@ class OnBoardFragment : Fragment() {
         binding.btnStart.setOnClickListener {
             val preferenceHelper = PreferenceHelper
             preferenceHelper.unit(requireContext())
-            findNavController().navigate(R.id.action_onBoardFragment_to_homeFragment)
+            PreferenceHelper.save = true
+            findNavController().navigate(R.id.action_onBoardFragment_to_noteAppFragment)
         }
         nextButton()
     }

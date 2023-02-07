@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (PreferenceHelper.save) {
-            navController.navigate(R.id.homeFragment)
+            navController.navigate(R.id.noteAppFragment)
         } else {
             navController.navigate(R.id.onBoardFragment)
         }
