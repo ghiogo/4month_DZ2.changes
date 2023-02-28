@@ -7,16 +7,18 @@
 
     <fragment
         android:id="@+id/onBoardFragment"
-        android:name="com.example.a4month_dz2.fragments.onboard.OnBoardFragment"
+        android:name="com.example.a4month_dz2.ui.fragments.onboard.OnBoardFragment"
         android:label="fragment_on_board"
         tools:layout="@layout/fragment_on_board" >
+
         <action
             android:id="@+id/action_onBoardFragment_to_noteAppFragment"
-            app:destination="@id/noteAppFragment" />
+            app:destination="@id/noteAppFragment"
+            app:popUpTo="@id/noteAppFragment"/>
     </fragment>
     <fragment
         android:id="@+id/noteAppFragment"
-        android:name="com.example.a4month_dz2.fragments.NoteAppFragment"
+        android:name="com.example.a4month_dz2.ui.fragments.note.NoteAppFragment"
         android:label="fragment_note_app"
         tools:layout="@layout/fragment_note_app" >
         <action
@@ -25,10 +27,20 @@
     </fragment>
     <fragment
         android:id="@+id/detailNoteAppFragment"
-        android:name="com.example.a4month_dz2.fragments.DetailNoteAppFragment"
+        android:name="com.example.a4month_dz2.ui.fragments.note.detail.DetailNoteAppFragment"
         android:label="fragment_detail_note_app"
         tools:layout="@layout/fragment_detail_note_app" >
-        <argument
-            android:name="model"/>
+        <action
+            android:id="@+id/action_detailNoteAppFragment_to_noteAppFragment"
+            app:destination="@id/noteAppFragment" />
     </fragment>
 </navigation>
+<!--    <fragment-->
+<!--        android:id="@+id/registerFragment"-->
+<!--        android:name="com.example.a4month_dz2.ui.fragments.singin.RegisterFragment"-->
+<!--        android:label="fragment_register"-->
+<!--        tools:layout="@layout/fragment_register" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_registerFragment_to_noteAppFragment"-->
+<!--            app:destination="@id/noteAppFragment" />-->
+<!--    </fragment>-->

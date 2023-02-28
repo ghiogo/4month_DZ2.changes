@@ -14,4 +14,8 @@ object PreferenceHelper {
     var save: Boolean
         set(value) = sharedPreferences.edit().putBoolean("key", value).apply()
         get() = sharedPreferences.getBoolean("key", false)
+
+    var singIn: Boolean
+        set(value) = sharedPreferences.edit().putBoolean("kill", value).apply()
+        get() = sharedPreferences.getBoolean("kill", false)
 }

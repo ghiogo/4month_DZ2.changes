@@ -1,4 +1,4 @@
-package com.example.a4month_dz2.activity
+package com.example.a4month_dz2.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        if (PreferenceHelper.save) {
+        if (PreferenceHelper.save ) {
             navController.navigate(R.id.noteAppFragment)
         } else {
             navController.navigate(R.id.onBoardFragment)

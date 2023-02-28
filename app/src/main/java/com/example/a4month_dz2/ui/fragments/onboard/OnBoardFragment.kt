@@ -1,4 +1,4 @@
-package com.example.a4month_dz2.fragments.onboard
+package com.example.a4month_dz2.ui.fragments.onboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.a4month_dz2.R
-import com.example.a4month_dz2.adapters.OnBoardViewPagerAdapter
+import com.example.a4month_dz2.ui.adapters.OnBoardViewPagerAdapter
 import com.example.a4month_dz2.databinding.FragmentOnBoardBinding
 import com.example.a4month_dz2.utils.PreferenceHelper
 

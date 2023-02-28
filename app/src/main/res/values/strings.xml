@@ -9,7 +9,8 @@
     <string name="text2">Введите номер телефона</string>
     <string name="text3">Ваш код</string>
     <string name="text4">text</string>
-    <string name="_17_27">17:27</string>
-    <string name="_30">30 мая</string>
+    <string name="_30">30 мая </string>
     <string name="go">Готово</string>
+    <string name="Заголовок">Заголовок</string>
+    <string name="plus">+</string>
 </resources>

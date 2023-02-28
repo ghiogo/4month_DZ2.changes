@@ -1,10 +1,10 @@
-package com.example.a4month_dz2.adapters
+package com.example.a4month_dz2.ui.adapters
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.a4month_dz2.fragments.onboard.OnBoardPagingFragment
-import com.example.a4month_dz2.fragments.onboard.OnBoardPagingFragment.Companion.ARG_ONBOARD_PAGE_POSITION
+import com.example.a4month_dz2.ui.fragments.onboard.OnBoardPagingFragment
+import com.example.a4month_dz2.ui.fragments.onboard.OnBoardPagingFragment.Companion.ARG_ONBOARD_PAGE_POSITION
 
 class OnBoardViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 
